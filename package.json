@@ -1,0 +1,32 @@
+{
+  "name": "nativescript-wait",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TsvetanMilanov/nativescript-wait.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TsvetanMilanov/nativescript-wait/issues"
+  },
+  "homepage": "https://github.com/TsvetanMilanov/nativescript-wait#readme",
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/before-prepare.js"
+      }
+    ]
+  },
+  "dependencies": {
+    "nativescript-hook": "0.2.5"
+  }
+}
