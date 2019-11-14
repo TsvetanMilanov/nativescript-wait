@@ -22,7 +22,8 @@
     "hooks": [
       {
         "type": "before-prepare",
-        "script": "lib/before-prepare.js"
+        "script": "lib/wait.js",
+        "inject": true
       }
     ]
   },
